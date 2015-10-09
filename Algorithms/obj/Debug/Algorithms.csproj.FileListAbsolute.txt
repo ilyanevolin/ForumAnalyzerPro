@@ -1,0 +1,5 @@
+C:\Users\UGent\Desktop\ForumAnalyzerPro\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\UGent\Desktop\ForumAnalyzerPro\Algorithms\bin\Debug\Algorithms.dll
+C:\Users\UGent\Desktop\ForumAnalyzerPro\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\UGent\Desktop\ForumAnalyzerPro\Algorithms\obj\Debug\Algorithms.dll
+C:\Users\UGent\Desktop\ForumAnalyzerPro\Algorithms\obj\Debug\Algorithms.pdb

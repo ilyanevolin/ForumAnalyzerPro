@@ -1,0 +1,13 @@
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\bin\Debug\ForumAnalyzerPro.exe.config
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\bin\Debug\ForumAnalyzerPro.exe
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\bin\Debug\ForumAnalyzerPro.pdb
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.csprojResolveAssemblyReference.cache
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\MainWindow.baml
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\MainWindow.g.cs
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\App.g.cs
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro_MarkupCompile.cache
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.g.resources
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.Properties.Resources.resources
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.csproj.GenerateResource.Cache
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.exe
+C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.pdb

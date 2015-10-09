@@ -11,3 +11,6 @@ C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzer
 C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.csproj.GenerateResource.Cache
 C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.exe
 C:\Users\UGent\Desktop\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.pdb
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\ForumAnalyzerPro\bin\Debug\ForumAnalyzerPro.exe.config
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.exe
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\ForumAnalyzerPro\obj\Debug\ForumAnalyzerPro.pdb

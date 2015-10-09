@@ -23,27 +23,8 @@ namespace ForumAnalyzerPro.Algorithms
         protected IList<Uri> GetInternalPages(Uri url)
         {
             string rs = http.GET(url.AbsoluteUri, "", null, null, null);
-
-            /*if (DetermineForum(rs))
-                return ParseHomepage(rs);
-            else*/
             return AllLinksFromHomePage(rs);
-
         }
-        /*
-        protected bool DetermineForum(string rs)
-        {
-            string pattern = "<meta name=\"generator\" content=\"vBulletin 4\\.\\d\\.\\d\" />";
-            if (Regex.IsMatch(rs, pattern))
-            {
-                strParseHomePage = "<h4 class=\"threadtitle\">\\n\\t*<a href=\"(.+?)\"";
-                strParseSinglePage = "<blockquote class=\"signature restore\"><div class=\"signaturecontainer\">(.+?)</div></blockquote>";
-                return true;
-            }
-            //else if ...
-
-            return false;
-        }*/
 
         string[] blacklisted_words = { "members", "users", "member", "user" };
         //unkown forum type

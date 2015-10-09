@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\ForumSigType.cs" />
     <Compile Include="ForumScrape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="submodules\HomepageParser.cs" />
+    <Compile Include="submodules\PostParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\ForumAnalyzerPro.Common.csproj">
@@ -51,6 +54,7 @@
       <Name>ForumAnalyzerPro.Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

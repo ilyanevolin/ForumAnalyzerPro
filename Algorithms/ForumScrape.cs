@@ -2,6 +2,7 @@
 using ForumAnalyzerPro.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -13,21 +14,40 @@ namespace ForumAnalyzerPro.Algorithms
         protected ForumSigType ThisType = new ForumSigType();
         protected int MAX_REQUESTS, AMOUNT_SIGNATURES;
         protected int is_DoFollow, is_Href, is_TextLink, is_TextOnly, is_Unkown;
-        protected Http http = new Http();
+        protected Http http;
+
+        public ForumScrape(Http http)
+        {
+            this.http = http;
+        }
 
         //make request to forum (provided) url
-        public ForumSigType GetSignaturesFromForum(Uri url, int MAX_REQUESTS, int AMOUNT_SIGNATURES)
+        public ForumSigType GetSignaturesFromForum(Uri url, int MAX_REQUESTS, int AMOUNT_SIGNATURES, int MAX_THREADS)
         {
-            this.AMOUNT_SIGNATURES = AMOUNT_SIGNATURES;
-            this.MAX_REQUESTS = MAX_REQUESTS;
+            try
+            {
+                this.AMOUNT_SIGNATURES = AMOUNT_SIGNATURES;
+                this.MAX_REQUESTS = MAX_REQUESTS;
 
-            HomepageParser hp = new HomepageParser();            
-            var a = hp.GetInternalPages(url);
-
-            PostParser ps = new PostParser(http, MAX_REQUESTS,AMOUNT_SIGNATURES);
-            ThisType.Sigs = ps.GetSignaturesFromPage(a, url.AbsoluteUri);
-
-            DetermineType();
+                HomepageParser hp = new HomepageParser(http);
+                var a = hp.GetInternalPages(url);
+                ThisType.Url = url.AbsoluteUri;
+                if (a == null || a.Count == 0)
+                {
+                    ThisType.Type.Add(ForumSigType.TYPE.ERROR, 0);
+                }
+                else
+                {
+                    PostParser ps = new PostParser(http, MAX_REQUESTS, AMOUNT_SIGNATURES, MAX_THREADS);
+                    ThisType.Sigs = ps.GetSignaturesFromPage(a, url.AbsoluteUri);
+                    DetermineType();
+                }
+            }
+            catch (Exception ex)
+            {
+                string msg = "Error FS42." + Environment.NewLine + ex.Message + Environment.NewLine + (ex.InnerException != null ? ex.InnerException.Message : "");
+                Logging.Log("user", "Algo", msg);
+            }
             return ThisType;
         }
 
@@ -68,7 +88,7 @@ namespace ForumAnalyzerPro.Algorithms
             if (is_TextOnly > 0)
                 ThisType.Type.Add(ForumSigType.TYPE.TEXT_ONLY, is_TextOnly);
 
-            if (is_Unkown > 0)
+            if (is_Unkown > 0 || ThisType.Sigs.Count == 0)
                 ThisType.Type.Add(ForumSigType.TYPE.UNKOWN, is_Unkown);
         }
 

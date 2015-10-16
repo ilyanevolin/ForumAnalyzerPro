@@ -1,0 +1,16 @@
+﻿<Controls:MetroWindow x:Class="ForumAnalyzerPro.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        MinHeight="170" MinWidth="350" Height="170" Width="350"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="About" ResizeMode="NoResize"
+        >
+
+    <StackPanel Margin="10 10 10 10">
+        <Label Name="lblName" FontSize="16">Forum Analyzer Pro v__</Label>
+        <Label>Developed by: healzer.com</Label>
+        <Label>All rights reserved © 2015</Label>
+        <Label Foreground="Blue" Cursor="Hand" Name="lblContact" MouseDown="lblContact_MouseDown" ToolTip="Click to open contact form.">Contact: contact@healzer.com</Label>
+    </StackPanel>
+
+</Controls:MetroWindow>

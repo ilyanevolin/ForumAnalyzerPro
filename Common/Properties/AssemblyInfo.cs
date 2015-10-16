@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Common")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Universiteit Gent")]
+[assembly: AssemblyCompany("healzer.com")]
 [assembly: AssemblyProduct("Common")]
-[assembly: AssemblyCopyright("Copyright © Universiteit Gent 2015")]
+[assembly: AssemblyCopyright("Copyright © healzer.com 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

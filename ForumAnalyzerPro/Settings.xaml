@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow x:Class="ForumAnalyzerPro.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="170" Width="350"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Settings" ResizeMode="NoResize">
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" VerticalAlignment="Stretch">
+            <Grid>
+                <Label>Max. pages to check per forum:</Label>
+                <Controls:NumericUpDown Name="numMaxRequests" Minimum="10" Maximum="1000" Interval="5" StringFormat="N0" Value="100" HorizontalAlignment="Right" Width="90" ValueChanged="num_ValueChanged" />
+            </Grid>
+            <Grid>
+                <Label>Min. amount of signatures to find:</Label>
+                <Controls:NumericUpDown Name="numMinSigs" Minimum="1" Maximum="1000" Interval="5" StringFormat="N0" Value="10" HorizontalAlignment="Right" Width="90" ValueChanged="num_ValueChanged"/>
+            </Grid>
+            <Grid>
+                <Label>How many threads may be used:</Label>
+                <Controls:NumericUpDown Name="numThreads" Minimum="1" Maximum="30" Interval="1" StringFormat="N0" Value="5" HorizontalAlignment="Right" Width="90" ValueChanged="num_ValueChanged"/>
+            </Grid>
+        </StackPanel>
+        <Grid DockPanel.Dock="Bottom">
+        <Button  Name="btnSave" Width="50" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="btnSave_Click">Save</Button>
+        <Button Name="btnDefault" Width="120" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="btnDefault_Click">Default settings</Button>
+        </Grid>
+    </DockPanel>
+</Controls:MetroWindow>

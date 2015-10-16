@@ -22,5 +22,53 @@ namespace ForumAnalyzerPro.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("4")]
+        public int Threads {
+            get {
+                return ((int)(this["Threads"]));
+            }
+            set {
+                this["Threads"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int MinSigs {
+            get {
+                return ((int)(this["MinSigs"]));
+            }
+            set {
+                this["MinSigs"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("30")]
+        public int MaxRequests {
+            get {
+                return ((int)(this["MaxRequests"]));
+            }
+            set {
+                this["MaxRequests"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TID {
+            get {
+                return ((string)(this["TID"]));
+            }
+            set {
+                this["TID"] = value;
+            }
+        }
     }
 }

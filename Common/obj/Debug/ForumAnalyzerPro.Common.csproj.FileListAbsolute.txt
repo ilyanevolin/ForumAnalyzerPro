@@ -2,3 +2,8 @@ C:\Users\UGent\Desktop\ForumAnalyzerPro\Common\bin\Debug\ForumAnalyzerPro.Common
 C:\Users\UGent\Desktop\ForumAnalyzerPro\Common\bin\Debug\ForumAnalyzerPro.Common.pdb
 C:\Users\UGent\Desktop\ForumAnalyzerPro\Common\obj\Debug\ForumAnalyzerPro.Common.dll
 C:\Users\UGent\Desktop\ForumAnalyzerPro\Common\obj\Debug\ForumAnalyzerPro.Common.pdb
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Common\bin\Debug\ForumAnalyzerPro.Common.dll
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Common\bin\Debug\ForumAnalyzerPro.Common.pdb
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Common\obj\Debug\ForumAnalyzerPro.Common.dll
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Common\obj\Debug\ForumAnalyzerPro.Common.pdb
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Common\bin\Debug\Jint.dll

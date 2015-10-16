@@ -12,3 +12,4 @@ C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Algorithms\bin\Debug\ForumAnalyzerP
 C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Algorithms\obj\Debug\ForumAnalyzerPro.Algorithms.csprojResolveAssemblyReference.cache
 C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Algorithms\obj\Debug\ForumAnalyzerPro.Algorithms.dll
 C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Algorithms\obj\Debug\ForumAnalyzerPro.Algorithms.pdb
+C:\Users\UGent\Source\Repos\ForumAnalyzerPro\Algorithms\bin\Debug\Jint.dll

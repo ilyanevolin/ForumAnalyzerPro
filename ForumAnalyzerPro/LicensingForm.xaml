@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow  x:Class="ForumAnalyzerPro.LicensingForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Licensing"
+        Height="183.4" Width="238" ResizeMode="NoResize"
+        Icon="Resources/Logo.ico">
+    <DockPanel>
+
+        
+            <StackPanel DockPanel.Dock="Top" Margin="10">
+                <Grid>
+                    <Label Content="License ID:"></Label>
+                    <TextBox Name="txtLicense" Width="120" HorizontalAlignment="Right"></TextBox>
+                </Grid>
+                <Button Name="btnSubmit" Click="btnSubmit_Click" HorizontalAlignment="Right" Margin="0 10 0 15" Width="80">Submit</Button>
+                <TextBlock Name="lnkBuy" MouseDown="lnkBuy_MouseDown" Foreground="Blue" TextDecorations="underline">Buy your license today!</TextBlock>
+            </StackPanel>
+
+
+        <StatusBar Height="auto" DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
+            <WrapPanel>
+                <TextBlock Name="lblStatus" Width="auto" Height="30px"></TextBlock>
+            </WrapPanel>
+        </StatusBar>
+    </DockPanel>
+</Controls:MetroWindow>
